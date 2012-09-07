@@ -10,8 +10,8 @@ class SubscriptionBase(models.Model):
     '''
 
     subscribed = models.BooleanField(_('subscribed'), default=True)
-	name = models.CharField(max_length=255)
-	ipaddress=models.CharField(max_length=16,blank=True,null=True)	
+    name = models.CharField(max_length=255)
+    ipaddress=models.CharField(max_length=16,blank=True,null=True)  
     email = models.EmailField(_('email'), unique=True)
     created_on = models.DateField(_("created on"), blank=True)
     updated_on = models.DateField(_("updated on"), blank=True)
